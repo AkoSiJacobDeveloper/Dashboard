@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rethink Sans';
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20% 3fr; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas: 
+        'aside main'     
+        'footer footer';  
+}
+
+aside {
+    grid-area: aside;
+    border: 1px solid black;
+    height: 100vh;
+    z-index: 100;
+}
+
+main {
+    grid-area: main;
+    border: 1px solid black;
+}
+
+footer {
+    grid-area: footer;
+    border: 1px solid black;
+}

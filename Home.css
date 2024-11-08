@@ -224,3 +224,54 @@ tr:nth-child(even) {
 ::-webkit-scrollbar-thumb {
     background-color: #007bff;
 }
+
+.profile-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h3 {
+    margin: 0px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-actions button {
+    padding: 8px 15px;
+    background-color: #27A7E7;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-actions button:hover {
+    background-color: #1E90FF;
+}
+
+.study-load, .grades, .billings, .support {
+    margin-top: 10px;
+}

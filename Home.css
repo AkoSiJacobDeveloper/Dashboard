@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    font-family: "Rethink Sans";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 25vw 3fr; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas: 
+        'aside main'     
+        'footer footer';
+}
+
+aside {
+    grid-area: aside;
+    height: 100vh;
+    z-index: 100;
+    background-color: #004aad;
+    padding: 10px;
+    position: fixed;
+    width: 25vw;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logoname {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.name {
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;         
+}
+
+span {
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 12px;
+    color: white;
+}
+
+nav {
+    margin: 10% 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a i {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+a:hover i {
+    color: #fff;
+}
+
+a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+a.active i {
+    color: #fff;
+}
+
+.logout-btn {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+img {
+    width: 30%;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0px 10px 10px 10px;
+}
+
+.navHeading {
+    margin: 0px;
+}
+
+.account {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+.studName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+#profileicon {
+    width: 50px;
+}
+h4 {
+    margin-bottom: 0px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0px 20px 0px ;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 10%;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    gap: 5px
+}
+
+.card {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    width: 150px;
+    height: 150px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.total {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.level {
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+}
